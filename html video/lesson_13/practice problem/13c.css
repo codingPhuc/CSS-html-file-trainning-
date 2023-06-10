@@ -1,0 +1,87 @@
+p
+{
+    font-family: Arial;
+    margin-top: 0 ;
+    margin-bottom: 0;
+}
+.text-box 
+{
+    display: block;
+    flex-direction: column;
+    box-shadow:  1px 1px 2px 2px rgba(0,0,0,0.5) ;
+ /*will put the boxshadow in the inside */
+    width: 400px;
+    padding-left:  10px;
+    padding-bottom:  20px;
+    padding-top:  10px;
+    padding-right: 10px;
+    /*fix */ 
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+
+.profile-box
+{
+    padding-right:  10px;
+}
+.text-box-lower
+{   
+    display: flex;
+    flex-direction: row;
+    align-items:  center;
+    padding-top:  20px;
+}
+
+.cat_image 
+{
+    width: 50px;
+    height: 50px;
+    border-radius:  25px;
+    object-fit: cover;
+    /*If we use object-fit: cover; the image keeps its aspect ratio and fills the given dimension. 
+    The image will be clipped to fit:*/
+
+
+}
+.information-box 
+{
+    flex: 1; /*with out the information-box   we will be left with empty right space  
+}
+.Promotions-box 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.profile-box
+{
+    margin-right:  10px;
+}
+.name-text , .time-text , .sale-text  , .information-text 
+{
+    margin-top: 0 ;
+    margin-bottom: 0;
+}
+.name-text 
+{
+    font-size: 18px; 
+    font-weight: bold;
+}
+.time-text  ,.information-text ,.text-inbox 
+{
+    font-size:  14px;
+    color:  gray;
+
+}
+.sale-text
+{
+    font-size:  14px;
+    font-weight: bold;
+}
+
+
+
+
+

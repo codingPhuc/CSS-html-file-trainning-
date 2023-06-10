@@ -1,0 +1,22 @@
+.imag 
+{
+    margin-bottom:  6px;
+    display:  block ;
+    margin-left:  auto;
+    margin-right:  auto;
+    margin-bottom: 10px;
+}
+.textbox
+{
+   border:  none;
+   padding-top: 12px;
+   padding-bottom: 12px;
+   padding-left: 16px;
+   padding-right: 16px;
+   font-size: 16px;
+   width: 500px;
+   border-radius: 30px;
+   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+   margin-left: 100px;
+}
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <TItle> YOUTUBE.COM CLONE   </TItle>
+        <style> 
+            .thumbnail 
+            {
+                width: 300px;
+                height:  300px;
+                /*object-fit:  contain;
+                object-position:  bottom;
+                border-width :2px; 
+                border-style: solid;
+                border-color: red; */ 
+                display:  block;/*display block element */
+
+            }
+            .search-bar 
+            {
+                font-size: 20px;
+                margin-left:  12px;
+            }
+            .video-title 
+            {
+                width: 300px ;
+            }
+            .video-author ,.video-stats /* this will only display the text inline meaning it is not a inline block element*/ 
+            {
+                display: inline-block;
+            }
+            .div-example 
+            {
+                display: inline-block;   
+            }
+            /*div are container you need  containner t group our element togheter  */ 
+        </style>
+    </head>
+    <body>
+        <input class="search-bar" type="text" placeholder="Search">
+    <!--inline-block  element take up  the needed space-->    <img class="thumbnail" src="image/thump.webp" alt="thumbnail-1">
+        
+          <!-- element that appear inside a line of  text-->  <p class="video-title ">Talking Tech and AI with Google CEO Sundar Pichai!</>
+        <p class="video-author">Marques Brownlee</p>
+        <!--block element take up a entired line -->
+    
+
+    </body>
+</html>

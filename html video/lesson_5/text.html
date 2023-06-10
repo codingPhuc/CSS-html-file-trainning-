@@ -1,0 +1,97 @@
+<style> 
+    p{
+        font-family:  Arial;/* an element can have a lot of style */
+        margin-top:  0px;
+        margin-bottom:  0px; /* the resond why we need to do this  a lot of time is because we dont need to used redundance code */ 
+    }
+    /*which style do we actually get  the line bellow override the line at the tops*/
+    /*the bottem style have more priority then the top */  
+    /* class name or more specific element get more priority then genaral element */
+    
+    .video-title
+    {
+        font-family: Arial;
+        font-weight:  bold;
+        font-size: 20px;
+        width:  300px; /*this is to set the width size */
+        line-height  : 24px ; 
+        margin-bottom:  0px; 
+    }
+    .video-stats
+    {
+        font-family: Arial;
+        font-size: 14px;
+        color : gray ; 
+        margin-top:  0;
+        margin-bottom:  20px;
+    }
+    .video-author 
+    {
+        font-family: Arial;
+        font-size: 14px;
+        color:  rgb(11, 7, 7);
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .video-description 
+    {
+        font-family: Arial;
+        font-size:  14px;
+        color:  rgb( 96, 96, 96);
+        width:  280px;
+        line-height:  22px;
+        margin-top: 0 ;
+        margin-bottom: 100px;
+    }
+    .apple-text { 
+        margin-bottom:  50px;
+        color: white;
+        font-size: 14px ;
+        background-color:  #e34140;
+        text-align: center;
+        padding-top:  18px;
+        padding-bottom: 18px;
+    }
+    .shop_link 
+    {
+        cursor: pointer;
+    }
+    .shop_link:hover 
+    {
+        text-decoration: underline;
+
+    }
+    .span_example{ 
+        color : red ;
+        margin-left: 12px;
+    }
+    
+
+</style>
+<p class="video-title">
+    Talking tech and AI with Google CEO Sundar Pichai!   
+</p>
+<p class="video-stats"> 
+    3.4M views 	&#183 ; 6 months ago 
+</p>
+<p class="video-author">
+    Marques Brownlee  &#10003
+</p>
+<p class="video-description">
+    Talking tech and AI on the heels of Google I/O.
+     Also a daily driver phone reveal from Google's
+   Shop early for the best selection of holiday favourites. Shop now >   CEO. Shoutout to Sundar!
+</p>
+
+<p class="apple-text"> 
+    Shop early for the best selection of holiday favourites. <span class="shop_link">Shop now</span> >
+</p>
+<!--text element is an element inside a text-->
+< > 
+    Shop early for the <strong>best selection</strong>  of  <u>holiday</u>   favourites. <span class="span_example">Shop now</span>  >
+    <!--the strong element will modify the text making it bold-->
+    <!--the underline element will modify the text making it underline-->
+    <!--the span element will modify the text making it being able to be modify-->
+</p>
+
+<!--paragraph by deflaut set the margin as 14 px -->

@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <style> 
+        .division
+        {
+         display:  grid;
+
+            grid-template-columns: 200px 75px;
+            row-gap: 10;
+        }
+        .color_1 
+        {
+            background-color: blue;
+        }
+        .color_2 
+        {
+            background-color: red;
+        }
+        .thirdivision
+        {
+            display: grid;
+            grid-template-columns: 50px  1fr  75px; 
+        }
+        .forthdivision 
+        {
+            display: grid;
+            grid-template-columns: 1fr  1fr  1fr 1fr;
+            column-gap: 20px;
+            row-gap: 10px; 
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="division"> 
+        <div class="color_1">100px</div>
+        <div class = "color_2">100px</div>
+
+    </div>
+    <div class="thirdivision">
+        <div class="color_1">100px</div>
+        <div class = "color_2">100px</div>
+        <div class = "color_1">100px</div>
+    </div>
+    <div class="forthdivision">
+        <div class="color_1">100px</div>
+        <div class = "color_2">100px</div>
+        <div class = "color_1">100px</div>
+        <div class = "color_2">100px</div>
+
+        <div class="color_1">100px</div>
+        <div class = "color_2">100px</div>
+        <div class = "color_1">100px</div>
+        <div class = "color_2">100px</div>
+    </div>
+
+</body>
+</html>

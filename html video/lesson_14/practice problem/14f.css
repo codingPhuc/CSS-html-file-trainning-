@@ -1,0 +1,62 @@
+body 
+{
+    height:  3000px ;
+}
+.sidebar 
+{
+    background-color: lightblue; 
+    position: fixed;
+    top :0 ;
+    left:  0 ;
+    bottom:  0 ;
+    width: 220px;
+    display: flex;
+    flex-direction: row;
+
+}
+.sidebar-profile
+{   
+    background-color: rgb(33, 33, 33);
+    padding-top: 10px;
+    padding-right:  10px;
+    padding-left: 10px;
+}
+.sidebar-info 
+{
+    background-color: rgb(55, 55, 55);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    width:  150px;
+}
+img 
+{
+    width:  50px ;
+    height:  50px;
+    object-fit: cover;
+    display:  block ;
+    border-radius: 25px;
+    margin-bottom: 10px;
+
+}
+
+.sidebar-info-text
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    
+
+}
+
+.sidebar-info-text >p
+{
+    margin: 0;
+}
+.sidebar-info-harshtag > p 
+{
+    margin-bottom:  10px;
+    color: gray;
+    
+}

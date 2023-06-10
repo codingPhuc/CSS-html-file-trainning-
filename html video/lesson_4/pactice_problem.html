@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        .b_n 
+        {
+            padding: 10px ;
+            padding-left: 6px;
+            padding-right:  6px;
+        }
+        .shadow 
+        {
+            background-color: green;
+            color: white;
+            font-weight:  bold;
+            border: none;
+            cursor: pointer;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 16px;
+            padding-right: 16px;
+            box-shadow: 3px , 3px , 5px ,rgba(0, 0, 0, 0.3) ;
+        
+        }
+
+        .shadow:active
+        {
+            box-shadow: none;
+            margin-top:  3px;
+            margin-right: 3px;
+            /*the margin is used to create the affect of cricking a button  */ 
+        }
+
+        .stretch 
+        {
+            background-color: green;
+            color: white;
+            font-weight:  bold;
+            border: none;
+            cursor: pointer;
+            transition: 0.5s ;
+
+        }
+        .stretch:hover
+        {
+            padding: 20px ; 
+        }
+        .ma_pad 
+        {
+            background-color: green;
+            color: white;
+            font-weight:  bold;
+            border: none;
+            cursor: pointer;
+            margin-left: 5px;
+            margin-right: 5px;
+            transition: 0.5s;
+        }
+        .ma_pad:hover
+        {
+            padding-left: 10px;
+            padding-right: 10px;
+            margin: 2px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <button class = "b_n">back</button> <a href="">1</a> <a href="">2</a> <a href="">3</a> <a href="">4</a> <a href="">5</a>  <button class = "b_n">next</button>
+    <hr> 
+    <button class = "shadow">shadow</button>
+    <hr> 
+    <button class="stretch"> stretch</button>
+    <hr>
+    <button class="ma_pad">one</button> <button class="ma_pad">two</button> <button class="ma_pad">three</button>
+</body>
+</html>

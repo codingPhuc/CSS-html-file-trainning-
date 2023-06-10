@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded',function(){
+                let correct  = document.querySelector('.correct');
+                correct.addEventListener('click',function(){
+                    correct.style.backgroundColor = "green";
+                    document.querySelector("#answer_1").innerHTML = "correct";
+                });
+                let incorrect  = document.querySelectorAll(".incorrect");
+                for (let i=0  ; i<incorrect.length ;i++)
+                {
+                    incorrect[i].addEventListener('click',function(){
+                        incorrect[i].style.backgroundColor = "red";
+                        document.querySelector("#answer_1").innerHTML = "incorrect";
+                    });
+                }
+                document.querySelector("#check").addEventListener('click',function(){
+                    let input = document.querySelector("input") ; 
+                    if ( input.value.toLocaleLowerCase()   == "canada" )
+                    {
+                        input.style.backgroundColor = "green";
+                        document.querySelector("#answer_2").innerHTML  = "correct";
+                    }
+                    else 
+                    {
+                        input.style.backgroundColor = "red";
+                        document.querySelector("#answer_2").innerHTML  = "incorrect";
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>what animal did autrialia go to war with?</h3>
+                <button type="text" class="incorrect" >6 people per 1 </button>
+                <button type="text" class="correct" >6 people per 1 </button>
+                <button type="text" class="incorrect" >6 people per 1 </button>
+                <button type="text" class="incorrect" >6 people per 1 </button>
+                <button type="text" class="incorrect">6 people per 1 </button>
+                <p  id = "answer_1"></p>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <!-- TODO: Add free response question here -->
+                <h3>in which country is it illegal to own a guinea pig</h3>
+               
+                <form >  
+                <input type="text" placeholder="country"> 
+                <button id="check" >check Answer</button>
+                <p id ="answer_2"></p>
+            </form>
+
+
+            </div>
+        </div>
+    </body>
+</html>

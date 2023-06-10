@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Trivia!</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let body = document.querySelector("button.button_open");
+        let body_2 = document.querySelector("button.button_incorrect");
+
+        let word  = document.querySelector("div.word") ;
+        var correct = document.getElementById("right");
+        var wrong  = document.getElementById("wrong");
+        correct.style.display  = "none"; 
+        wrong.style.display  = "none";
+
+        document.querySelector("#incorrect").addEventListener("click", function () {
+            body_2.style.backgroundColor = "red";
+            wrong.style.display = "block";
+
+          });
+          document.querySelector("#correct").addEventListener("click", function () {
+            body.style.backgroundColor = "green";
+            correct.style.display = "block";
+          });
+        document.querySelector("#incorrect").addEventListener("click", function () {
+            body_2.style.backgroundColor = "red";
+            wrong.style.display = "block";
+
+          });
+        document.querySelector("#incorrect").addEventListener("click", function () {
+            body_2.style.backgroundColor = "red";
+            wrong.style.display = "block";
+
+
+          });
+        
+    });
+    </script>
+  </head>
+  <body>
+      <h1>Trivia!</h1>
+
+    <div class="container">
+        <h2>Part 1: Multiple Choice</h2>
+        <hr />
+        <!-- TODO: Add multiple choice question here -->
+        <h3>what animal did autrialia go to war with?</h3>
+        <button id="incorrect" class="button_incorrect">pokemon</button>
+        <button id="correct" class="button_open">emu</button>
+        <button id="incorrect" class="button_incorrect">kanrago</button>
+        <button id="incorrect" class="button_incorrect">pokemon</button>
+        <div id= "right" > this is incorrect </div>
+        <div id = "wrong" > this is correct </div>
+
+        
+
+      <div class="section">
+        <h2>Part 2: Free Response</h2>
+        <hr />
+        <!-- TODO: Add free response question here -->
+      </div>
+    </div>
+  </body>
+</html>

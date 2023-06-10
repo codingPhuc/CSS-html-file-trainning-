@@ -1,0 +1,54 @@
+<head> 
+
+    <title>background-color </title>
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+            let body = document.querySelector('body') ; 
+            document.querySelector('#red').addEventListener('click', function(){
+                body.style.backgroundColor = 'red ';
+            });
+            document.querySelector('#green').addEventListener('click',function(){
+                body.style.backgroundColor = 'green' ; 
+            });
+            document.querySelector('#blue').addEventListener('click',function(){ 
+                body.style.backgroundColor = 'blue' ; 
+            });
+            document.querySelector('#purple').addEventListener('click',function(){ 
+                body.style.backgroundColor =  'purple' ;
+            } );
+            document.querySelector('#white').addEventListener('click',function()
+            { 
+                body.style.backgroundColor = 'white'; }); 
+                
+            
+        });
+    
+    </script>
+    <style> 
+        body {
+            background-color: black;
+            
+        }
+        .button_s  
+        {
+            color:  black ;
+            width : 140px ;
+            height : 40px ;
+            border-radius:  18px;
+            cursor: pointer;
+
+
+        }
+    
+
+    </style>
+</head>
+<body>
+    <button  class = "button_s" id = "red">R</button>
+    <button class = "button_s" id = "green">G</button>
+    <button id = "blue" class = "button_s">B</button>
+    <button id = "purple" class ="button_s" >P</button>
+    <button id = "white" class = "button_s ">W</button>
+
+  
+</body>
